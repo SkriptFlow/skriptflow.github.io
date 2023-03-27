@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SkriptFlow</title>
+	<!-- Add Tailwind CSS CDN -->
+	<link href="https://cdn.tailwindcss.com" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav class="bg-black fixed w-full z-10 top-0">
+		<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+			<div class="relative flex items-center justify-between h-20">
+				<a href="#" id="logo" class="flex items-center">
+					<img src="assets/skriptflow-logo.png" alt="Logo" class="h-10 w-15 mr-1">
+					<span class="text-white text-lg font-medium">SkriptFlow</span>
+				  </a>
+				<div class="absolute inset-y-0 right-0">
+					<div class="flex items-center h-full">
+						<a href="https://discord.gg/jugMszmPRf" class="border-2 border-purple-700 hover:bg-purple-700 hover:text-white transition-colors duration-250 rounded-none text-white mt-4 px-7 py-2.5">
+							<div class="flex items-center">
+								<span>DISCORD</span>
+								<i class="fas fa-paper-plane fa-sm mr-2"></i>
+							</div>
+						</a>                 
+						<a href="#showcase" class="text-white text-lg px-3 py-2 rounded-md font-medium mt-4">SHOWCASE</a>
+						<a href="#requirements" class="text-white text-lg px-3 py-2 rounded-md font-medium mt-4">REQUIREMENTS</a>
+						<a href="#pricing" class="text-white text-lg px-3 py-2 rounded-md font-medium mt-4">PRICING</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Landing Page -->
+	<div style="position: relative;">
+		<div style="padding: 210px 130px;">
+		  <h1 class="text-5xl font-bold text-blue-500 mb-4">SkriptFlow<br>Automate Your Workflow</h1>
+		  
+		  <p class="text-gray-400 text-sm mt-8 mb-8">SkriptFlow is a powerful automation tool that allows you to streamline<br> your workflow and save time on building your server.</p>
+		  
+		  <a href="#get-started" class="border-2 border-blue-500 hover:bg-blue-500 hover:text-white transition-colors duration-250 rounded-none text-white mt-4 px-7 py-2.5">
+			<i class="fas fa-paper-plane fa-sm mr-2"></i> GET STARTED
+		  </a>   
+		</div>
+		<div style="position: absolute; top: 135px; right: 60px;">
+		  <img src="assets/skriptflow.png" alt="Head" style="width: 750px; height: 500px;">
+		</div>		  
+	  </div>
+
+	<!-- Showcase Section -->
+	<div id="get-started">
+		<div class="flex flex-wrap justify-center m-24">
+			<div class="max-w-sm rounded overflow-hidden shadow-lg m-4 transition duration-400 ease-in-out transform hover:-translate-y-1.5 hover:shadow-2xl">
+			<img class="w-full" src="assets/screenshot-1.png" alt="Card image">
+			<div class="px-6 py-4">
+				<div class="text-white font-bold text-xl mb-2">Speed Benefits</div>
+				<p class="text-gray-400 text-base">
+					Generate a multitude of items and their descriptions in mere minutes with ease using SkriptFlow.
+				</p>
+			</div>
+			</div>
+			<div class="max-w-sm rounded overflow-hidden shadow-lg m-4 transition duration-400 ease-in-out transform hover:-translate-y-1.5 hover:shadow-2xl">
+				<img class="w-full" src="assets/screenshot-4.png" alt="Card image">
+				<div class="px-6 py-4">
+				<div class="text-white font-bold text-xl mb-2">Awesome GUIs</div>
+				<p class="text-gray-400 text-base">
+					With our easy-to-use skript, you can create custom chest GUIs in a matter of seconds! The provided code enables you to assign specific actions to each GUI element, allowing for a seamless and intuitive user experience. Simply choose which items correspond to each action, and you're ready to go!
+				</p>
+				</div>
+			</div>
+			<div class="max-w-sm rounded overflow-hidden shadow-lg m-4 transition duration-400 ease-in-out transform hover:-translate-y-1.5 hover:shadow-2xl">
+				<img class="w-full" src="assets/screenshot-3.png" alt="Card image">
+				<div class="px-6 py-4">
+				<div class="text-white font-bold text-xl mb-2">Collaborative Item Creation</div>
+				<p class="text-gray-400 text-base">
+					By empowering your users to contribute their own ideas and creativity, you can create a dynamic and constantly evolving server environment that keeps players coming back for more.
+				</p>
+				</div>
+			</div>
+			<div class="max-w-sm rounded overflow-hidden shadow-lg m-4 transition duration-400 ease-in-out transform hover:-translate-y-1.5 hover:shadow-2xl">
+				<img class="w-full" src="assets/screenshot-2.png" alt="Card image">
+				<div class="px-6 py-4">
+				<div class="text-white font-bold text-xl mb-2">Consistency Is Key</div>
+				<p class="text-gray-400 text-base">
+					Ensure consistency across your server's items and lores by using a standardized template.
+				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Purchase and Pricing Section -->
+	<h1 id="pricing" class="text-3xl font-bold title-font text-center mb-24 mt-36 text-white">Plans & Prices</h1>
+
+	<div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-20 px-32">
+		<div class="bg-black rounded-lg shadow-xl overflow-hidden border border-gray-600 hover:transform hover:-translate-y-1 transition-all inline-block">
+			<div class="px-6 py-4">
+			  <div class="font-bold text-2xl mb-2 text-white">Free Plan</div>
+			  <div class="text-white text-lg mb-4">
+				<ul class="list-disc list-inside">
+				  <li>Minimal features</li>
+				  <li>Good place to test out</li>
+				  <br>
+				</ul>
+			  </div>
+			  <div class="flex items-center justify-between">
+				<div class="text-4xl text-gray-600 font-bold">FREE</div>
+				<button class="border-2 border-gray-600 hover:bg-gray-600 hover:text-white transition-colors duration-250 rounded-none text-white mt-4 px-7 py-2.5">
+				  <i class="fas fa-paper-plane fa-sm mr-2"></i> JOIN DISCORD
+				</button>
+			  </div>
+			</div>
+		  </div>
+		<div class="bg-black rounded-lg shadow-xl overflow-hidden border border-yellow-500 hover:transform hover:-translate-y-1 transition-all inline-block">
+		  <div class="px-6 py-4">
+			<div class="font-bold text-2xl mb-2 text-white">Premium Plan</div>
+			<div class="text-white text-lg mb-4">
+			  <ul class="list-disc list-inside">
+				<li>Regular features</li>
+				<li>Plugin Support</li>
+				<li>Early access to new features</li>
+			  </ul>
+			</div>
+			<div class="flex items-center justify-between">
+			  <div class="text-4xl text-yellow-500 font-bold">14,99€</div>
+			  <a href="https://skriptflow.mysellix.io/en/product/6421c9b366213" class="border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white transition-colors duration-250 rounded-none text-white mt-4 px-7 py-2.5">
+				<i class="fas fa-shopping-cart fa-sm mr-2"></i> PURCHASE NOW
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+  <!-- Requirements Section -->
+  <h1 id="requirements" class="text-3xl font-bold title-font text-center mb-24 mt-48 text-white">Requirements</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 px-32">
+  <div class="bg-black rounded-lg shadow-xl overflow-hidden border border-purple-400 hover:transform hover:-translate-y-1 transition-all inline-block">
+	<div class="flex items-center justify-center h-40">
+	  <img class="w-20 h-20 object-cover rounded-full" src="assets/skript-icon.png" alt="Addon Preview Image">
+	</div>
+	<div class="px-6 py-2">
+	  <div class="font-bold text-2xl mb-2 text-white">SkriptLang Plugin</div>
+	  <div class="text-white text-lg mb-4">
+		<ul class="list-disc list-inside">
+		  <li>Main plugin which runs</li>
+		  <li>the skripts.</li>
+		  <br>
+		  <br>
+		</ul>
+	  </div>
+	  <div class="flex items-center justify-between">
+		<a href="https://github.com/SkriptLang" target="_blank" class="border-2 border-purple-500 hover:bg-purple-500 hover:text-white transition-colors duration-250 rounded-none text-white mt-4 px-7 py-2.5">
+		  <i class="fas fa-download fa-sm mr-2"></i> DOWNLOAD
+		</a>
+	  </div>
+	</div>
+  </div>
+  <div class="bg-black rounded-lg shadow-xl overflow-hidden border border-gray-400 hover:transform hover:-translate-y-1 transition-all inline-block">
+	<div class="flex items-center justify-center h-40">
+	  <img class="w-20 h-20 object-cover rounded-full" src="assets/skbee-icon.png" alt="Addon Preview Image">
+	</div>
+	<div class="px-6 py-2">
+	  <div class="font-bold text-2xl mb-2 text-white">SkBee Addon</div>
+	  <div class="text-white text-lg mb-4">
+		<ul class="list-disc list-inside">
+		  <li>Enables server to use NBT</li>
+		  <li>and much more!</li>
+		  <br>
+		  <br>
+		</ul>
+	  </div>
+	  <div class="flex items-center justify-between">
+		<a href="https://github.com/ShaneBeee/SkBee/releases/tag/2.8.0" target="_blank" class="border-2 border-green-500 hover:bg-green-500 hover:text-white transition-colors duration-250 rounded-none text-white mt-4 px-7 py-2.5">
+		  <i class="fas fa-download fa-sm mr-2"></i> DOWNLOAD
+		</a>
+	  </div>
+	</div>
+  </div>
+  <div class="bg-black rounded-lg shadow-xl overflow-hidden border border-gray-400 hover:transform hover:-translate-y-1 transition-all inline-block">
+	<div class="flex items-center justify-center h-40">
+	  <img class="w-20 h-20 object-cover rounded-full" src="assets/skRayFall-icon.png" alt="Addon Preview Image">
+	</div>
+	<div class="px-6 py-2">
+	  <div class="font-bold text-2xl mb-2 text-white">skRayFall Addon</div>
+	  <div class="text-white text-lg mb-4">
+		<ul class="list-disc list-inside">
+		  <li>Allows developers to implement</li>
+		  <li>tools much faster.</li>
+		  <br>
+		  <br>
+		</ul>
+	  </div>
+	  <div class="flex items-center justify-between">
+		<a href="https://sk.rayfall.net/" target="_blank" class="border-2 border-green-500 hover:bg-green-500 hover:text-white transition-colors duration-250 rounded-none text-white mt-4 px-7 py-2.5">
+		  <i class="fas fa-download fa-sm mr-2"></i> DOWNLOAD
+		</a>
+	  </div>
+	</div>
+  </div>
+</div>
+
+	<!-- Showcase Section -->
+	<div class="bg-black py-10">
+		<div class="container mx-auto">
+		  <h2 id="showcase" class="text-3xl text-center font-bold text-white mb-8 mt-20">Showcase</h2>
+		  <div class="flex flex-wrap justify-center">
+			<div class="w-full md:w-1/2 lg:w-1/3 p-4">
+			  <div class="relative">
+				<div class="h-0 relative" style="padding-bottom: 56.25%;">
+				  <iframe src="https://www.youtube.com/embed/S2jFhJODW1Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="absolute w-full h-full top-0 left-0"></iframe>
+				</div>
+			  </div>
+			  <div class="mt-4 text-center">
+				<a href="https://www.youtube.com/video/S2jFhJODW1Q" target="_blank" class="border-2 border-red-500 hover:bg-red-500 hover:text-white transition-colors duration-250 rounded-none text-white mt-12 px-7 py-2.5">
+					<i class="fas fa-video fa-sm mr-2"></i> YOUTUBE
+				  </a>
+			  </div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg-black text-white py-8">
+		<div class="max-w-14xl mx-auto px-8 sm:px-6 lg:px-8">
+			<div class="flex flex-col md:flex-row justify-between items-center">
+				<div class="mb-2 md:mb-0">
+					<p>&copy; 2023 SkriptFlow. All Rights Reserved.</p>
+				</div>
+				<div>
+					<ul class="flex justify-center md:justify-end space-x-4">
+						<li>
+							<a href="https://skriptflow.mysellix.io/" target="_blank" class="border-2 border-green-500 hover:bg-green-500 hover:text-white transition-colors duration-250 rounded-none text-white mt-12 px-7 py-2.5">
+								<i class="fas fa-shopping-cart fa-sm mr-2"></i> VISIT SHOP
+							  </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+			Toastify({
+				text: "Crypto payments only.",
+				style: {
+					background: "linear-gradient(to right, rgba(0,0,0,0.7), rgba(23, 0, 54,0.7))"
+				},
+				gravity: "bottom",
+				close: true,
+				duration: 7500
+			}).showToast();
+		});
+	</script>
+</body>
+</html>
